@@ -1,3 +1,7 @@
+:root{
+  --color-icons : rgb(122, 255, 184);
+  /* --color-icons: aqua; */
+}
 .App {
   text-align: center;
 }
@@ -35,4 +39,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+.social-icons{
+  color: var(--color-icons);
+  cursor: pointer;
+}
+p{
+  color:white;
+}
+
+.about img{
+  background-color:rgba(255, 255, 255, 0.484);
 }
