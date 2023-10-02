@@ -56,25 +56,25 @@ const Navbar = () => {
         </div>
       </div>
       <div className="bg-[#F5DBCD]  w-screen  flex h-[4em] justify-evenly py-2 font-medium">
-        <button className="hover:bg-[#D37130] bg-[#F6DE8D] px-3 shadow-2xl border hover:border-none border-black hover:text-white rounded-full text-black">
+        <button className="hover:bg-[#D37130] bg-[#F5DBCD] px-3 shadow-2xl  hover:border-none  hover:text-white rounded-full text-black">
           Catogery
         </button>
-        <button className="hover:bg-[#D37130] bg-[#F6DE8D] px-3 shadow-2xl border hover:border-none  border-black hover:text-white rounded-full text-black">
+        <button className="hover:bg-[#D37130] bg-[#F5DBCD] px-3 shadow-2xl  hover:border-none   hover:text-white rounded-full text-black">
           Traditional
         </button>
-        <button className="hover:bg-[#D37130] bg-[#F6DE8D] px-3 shadow-2xl border hover:border-none  border-black hover:text-white rounded-full text-black">
+        <button className="hover:bg-[#D37130] bg-[#F5DBCD] px-3 shadow-2xl  hover:border-none   hover:text-white rounded-full text-black">
           Textile
         </button>
-        <button className="hover:bg-[#D37130] bg-[#F6DE8D] px-3 shadow-2xl border hover:border-none  border-black hover:text-white rounded-full text-black">
+        <button className="hover:bg-[#D37130] bg-[#F5DBCD] px-3 shadow-2xl  hover:border-none   hover:text-white rounded-full text-black">
           Sculpture
         </button>
-        <button className="hover:bg-[#D37130] bg-[#F6DE8D] px-3 shadow-2xl border hover:border-none  border-black hover:text-white rounded-full text-black">
+        <button className="hover:bg-[#D37130] bg-[#F5DBCD] px-3 shadow-2xl  hover:border-none   hover:text-white rounded-full text-black">
           Poetry
         </button>
-        <button className="hover:bg-[#D37130] bg-[#F6DE8D] px-3 shadow-2xl border hover:border-none  border-black hover:text-white rounded-full text-black">
+        <button className="hover:bg-[#D37130] bg-[#F5DBCD] px-3 shadow-2xl  hover:border-none   hover:text-white rounded-full text-black">
           Ceramics
         </button>
-        <button className="hover:bg-[#D37130] bg-[#F6DE8D] px-3 shadow-2xl border hover:border-none  border-black hover:text-white rounded-full text-black">
+        <button className="hover:bg-[#D37130] bg-[#F5DBCD] px-3 shadow-2xl  hover:border-none   hover:text-white rounded-full text-black">
           Home Decor
         </button>
       </div>
