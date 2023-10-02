@@ -331,7 +331,7 @@ function Footer() {
             </div>
             <hr class="h-px  bg-black border-0 " />
             <br />
-            {/* <div className="mapouter ">
+            <div className="mapouter ">
               <div className="gmap_canvas ">
                 <iframe
                   width="300em"
@@ -343,8 +343,8 @@ function Footer() {
                 ></iframe>
 
                 <br />
-              </div> */}
-            {/* </div> */}
+              </div>
+            </div>
           </div>
         </div>
         <div className="Terms&Conditions bg-[#933121] h-auto">
