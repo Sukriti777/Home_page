@@ -11,6 +11,7 @@ import {
   useDispatch,
   connect,
 } from "react-redux";
+import MyCarousel from "./components/MyCarousel";
 
 const countReducer = (state = 0, action) => {
   switch (action.type) {
@@ -59,6 +60,7 @@ export default function App() {
       <Provider store={store}>
       <div>
         <Navbar />
+        <MyCarousel />
         <Container/>
         <div className="h-[100em]"></div>
         <Footer />
