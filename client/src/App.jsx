@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Components from "./components/Components";
 import { ReactDOM } from "react";
 
 import Home from "./pages/Home";
@@ -59,17 +60,19 @@ const Container = connect(MapStateToProps, MapDispatchToProps)(Component);
 export default function App() {
   return (
     <>
+
       <Provider store={store}>
         <div>
           <Navbar />
           <MyCarousel />
           <Home />
-
+          <Components/>
           <Container />
           <div className="h-[100em]"></div>
           <Footer />
         </div>
       </Provider>
+
     </>
   );
 }
