@@ -1,10 +1,13 @@
 import React from "react";
 import Ganpati from "../assets/ganapati.png";
 import Card from "../components/Card";
-
+import MyCarousel from "../components/MyCarousel";
+import Components from "../components/Components";
 function Home() {
   return (
     <>
+      <MyCarousel />
+      <Components />
       <div className="font-bold text-5xl mx-28 mt-5">
         <h1>
           Most sold <span className="text-[#D46E2F]">Arts</span>

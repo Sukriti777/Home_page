@@ -60,19 +60,17 @@ const Container = connect(MapStateToProps, MapDispatchToProps)(Component);
 export default function App() {
   return (
     <>
-
       <Provider store={store}>
         <div>
           <Navbar />
-          <MyCarousel />
+
           <Home />
-          <Components/>
+
           <Container />
           <div className="h-[100em]"></div>
           <Footer />
         </div>
       </Provider>
-
     </>
   );
 }
