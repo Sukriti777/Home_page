@@ -5,11 +5,12 @@ import { ReactDOM } from "react";
 
 import Home from "./pages/Home";
 import "./App.css";
-// import Home from "../pages/Home";
+import { ChakraProvider } from '@chakra-ui/react'
 
 import { createStore } from "redux";
 import { Provider, useSelector, useDispatch, connect } from "react-redux";
 import MyCarousel from "./components/MyCarousel";
+import Products from "./pages/Products";
 
 const countReducer = (state = 0, action) => {
   switch (action.type) {
@@ -60,17 +61,22 @@ const Container = connect(MapStateToProps, MapDispatchToProps)(Component);
 export default function App() {
   return (
     <>
+
+      <ChakraProvider>
       <Provider store={store}>
         <div>
           <Navbar />
 
           <Home />
 
-          <Container />
-          <div className="h-[100em]"></div>
+          {/* <Container /> */}
+            <Products />
+            <div className="h-[100em]"></div>
           <Footer />
         </div>
       </Provider>
+
+      </ChakraProvider>
     </>
   );
 }
