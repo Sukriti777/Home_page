@@ -11,7 +11,10 @@ import {
     RangeSliderTrack,
     RangeSliderFilledTrack,
     RangeSliderThumb,
-    Select
+    Select,
+    Checkbox,
+    Radio,
+    RadioGroup
 } from "@chakra-ui/react";
 
 const MyAccordion = ({ title, children }) => {
@@ -22,13 +25,13 @@ const MyAccordion = ({ title, children }) => {
                     <AccordionButton>
                         <Box as="span" flex='1' textAlign='left'>
 
-                            <Text fontSize='xl'>{ title }</Text>
+                            <Text fontSize='xl'>{title}</Text>
                         </Box>
                         <AccordionIcon />
                     </AccordionButton>
                 </h2>
-                <AccordionPanel pb={ 4 }>
-                    { children }
+                <AccordionPanel pb={4}>
+                    {children}
                 </AccordionPanel>
             </AccordionItem>
 
@@ -42,12 +45,12 @@ const Products = () => {
         <div className=" container mx-28">
             <Flex className="latofont"  >
                 <Box w="20%" bg="">
-                    <Stack spacing={ 4 }>
+                    <Stack spacing={4}>
                         <Text fontSize='4xl' >Filters</Text>
-                        <Accordion defaultIndex={ [0] } allowMultiple>
+                        <Accordion defaultIndex={[0]} allowMultiple>
 
                             <MyAccordion title="Musical Instruments">
-                                <Stack spacing={ 3 }>
+                                <Stack spacing={3}>
                                     <Text fontSize='lg'>Item 1</Text>
                                     <Text fontSize='lg'>Item 2</Text>
                                     <Text fontSize='lg'>Item 3</Text>
@@ -58,7 +61,7 @@ const Products = () => {
                                 </Stack>
                             </MyAccordion>
                             <MyAccordion title=" String Instruments">
-                                <Stack spacing={ 3 }>
+                                <Stack spacing={3}>
                                     <Text fontSize='lg'>Violins</Text>
                                     <Text fontSize='lg'>Ukelele</Text>
                                     <Text fontSize='lg'>Double Base</Text>
@@ -71,33 +74,71 @@ const Products = () => {
                         </Accordion>
                         <Text fontSize='4xl' >Price</Text>
                         <RangeSlider
-                            aria-label={ ['min', 'max'] }
+                            aria-label={['min', 'max']}
                             colorScheme='blue'
-                            defaultValue={ [120, 240] }
-                            min={ 0 } max={ 300 } step={ 30 }
+                            defaultValue={[120, 240]}
+                            min={0} max={300} step={30}
                         >
                             <RangeSliderTrack>
                                 <RangeSliderFilledTrack />
                             </RangeSliderTrack>
-                            <RangeSliderThumb index={ 0 } />
-                            <RangeSliderThumb index={ 1 } />
+                            <RangeSliderThumb index={0} />
+                            <RangeSliderThumb index={1} />
                         </RangeSlider>
                         <Flex align="center">
-                            <Select mr={ 2 } placeholder='Min'>
+                            <Select mr={2} placeholder='Min'>
                                 <option value='option1'>Option 1</option>
                                 <option value='option2'>Option 2</option>
                                 <option value='option3'>Option 3</option>
                             </Select>
                             <Text fontSize='lg' >to</Text>
-                            <Select ml={ 2 } placeholder='Max   '>
+                            <Select ml={2} placeholder='Max   '>
                                 <option value='option1'>Option 1</option>
                                 <option value='option2'>Option 2</option>
                                 <option value='option3'>Option 3</option>
                             </Select>
                         </Flex>
+
+                        <Accordion defaultIndex={[0]} allowMultiple>
+                            <AccordionItem>
+                                <h2>
+                                    <AccordionButton>
+                                        <Box as="span" flex='1' fontSize='2xl' textAlign='left'>
+                                            Availability
+                                        </Box>
+                                        <AccordionIcon />
+                                    </AccordionButton>
+                                </h2>
+                                <AccordionPanel pb={4}>
+                                    <Checkbox >Include Out Of Stock</Checkbox>
+                                </AccordionPanel>
+                            </AccordionItem>
+                        </Accordion>
+
+                        <Accordion defaultIndex={[0]} allowMultiple>
+                            <AccordionItem>
+                                <h2>
+                                    <AccordionButton>
+                                        <Box as="span" flex='1' fontSize='2xl' textAlign='left'>
+                                            Latest Products
+                                        </Box>
+                                        <AccordionIcon />
+                                    </AccordionButton>
+                                </h2>
+                                <AccordionPanel pb={4}>
+                                    <RadioGroup defaultValue='0'>
+                                        <Stack>
+                                            <Radio value='1'>Newest First</Radio>
+                                            <Radio value='2'>Products launched within 20-60 days</Radio>
+                                        </Stack>
+                                    </RadioGroup>
+                                </AccordionPanel>
+                            </AccordionItem>
+                        </Accordion>
+
                     </Stack>
                 </Box>
-                <Box w="80%">{/* Main content */ }</Box>
+                <Box w="80%">{/* Main content */}</Box>
             </Flex>
         </div>
     );
