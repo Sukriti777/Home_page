@@ -5,35 +5,57 @@ import Comp2 from './Comp2'
 const Components = () => {
     return (
         <>
-            <div className='m-7 p-10 text-3xl font-bold'>
+            <div className='m-7 p-10 text-5xl mx-[5%] font-bold'>
                 <div className='flex'>
-                Most Popular
+                    Most Popular
                     <div className='text-[#D46C2F] ml-2'>
                         Arts
                     </div>
                 </div>
-                <hr className="w-100 h-0.5 mx-auto my-4 auto-cols-auto bg-gray-100 border-0 rounded md:my-10 dark:bg-orange-700 relative bottom-5"></hr>
-                <div className='flex'>
-                <Comp1/>
-                <Comp1/> 
-                <Comp1/>  
+                <div className="bg-[#E6BEA0] mt-3 h-1 mb-8">
+                    <div className="bg-[#D0732F] h-1 w-[35%]"></div>
+                </div>
+                <div className='flex flex-wrap'>
+                    <Comp1
+                        title={"Pot Collection"}
+                        discount={56}
+                        newPrice={10499}
+                        oldPrice={14999}
+                        saved={4500}
+                    />
+                    <Comp1
+                        title={"Pot Collection"}
+                        discount={56}
+                        newPrice={10499}
+                        oldPrice={14999}
+                        saved={4500}
+                    />
+                    <Comp1
+                        title={"Pot Collection"}
+                        discount={56}
+                        newPrice={10499}
+                        oldPrice={14999}
+                        saved={4500}
+                    />
                 </div>
             </div>
-            <div className='m-7 p-10 text-3xl font-bold'>
+            <div className='m-7 p-10 relative bottom-16 mx-[5%] text-5xl font-bold'>
                 <div className='flex'>
-                Most Trending
+                    Most Trending
                     <div className='text-[#D46C2F] ml-2'>
                         Arts
                     </div>
                 </div>
-                <hr className="w-100 h-0.5 mx-auto my-4 auto-cols-auto bg-gray-100 border-0 rounded md:my-10 dark:bg-orange-700 relative bottom-5"></hr>
-                <div className='flex '>
-                <Comp2/>
-                <Comp2/>
-                <Comp2/>
-                <Comp2/>
+                <div className="bg-[#E6BEA0] mt-3 h-1 mb-8">
+                    <div className="bg-[#D0732F] h-1 w-[35%]"></div>
                 </div>
-            </div>
+                <div className='flex flex-wrap '>
+                    <Comp2 />
+                    <Comp2 />
+                    <Comp2 />
+                    <Comp2 />
+                </div>
+            </div> 
         </>
     )
 }
