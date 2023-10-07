@@ -1,29 +1,28 @@
 import React from 'react'
 import image from "../assets/image.jpg"
 
-function Comp() {
+function Comp({title, description, newPrice, oldPrice, saved, discount }) {
     return (
         <div>
-            <div className="w-72 h-72 mb-5 shadow-2xl mr-20 bg-[#ffffff] border border-gray-200 rounded-lg  dark:border-gray-700">
-                <p className='w-12 h-9 relative left-60 rounded-tr-lg rounded-bl-lg flex items-center bg-[#D46C2F] text-xs z-10'>
-                    56% OFF
+            <div className="w-72 mb-5 shadow-2xl mr-20 bg-[#F5F5F5] border-2 rounded-xl border-[#D46E2F]">
+                <p className='w-[38%] h-[16%] p-2 relative left-[62%] rounded-tr-lg rounded-bl-lg flex items-center bg-[#D46C2F] text-white text-xl z-10'>
+                    {discount}% OFF
                 </p>
                 <a href="#">
-                    <img className="h-38 w-56 relative bottom-7 left-8" src={image} alt="image" />
+                    <img className="w-[79%] rounded-xl relative bottom-6 left-[11%]" src={image} alt="image" />
                 </a>
-                <div className="p-1 relative bottom-9 bg-[#F5DFD0] rounded-b-lg mt-4">
+                <div className="p-3 relative bg-[#eddbcd] rounded-b-xl ">
                     <a href="#">
-                        <h5 className="mb-1 text-sm font-bold tracking-tight text-gray-900 dark:text-bls">Pot Collection</h5>
+                        <h5 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-bls">{title}</h5>
                     </a>
-                    <div className='flex'>
-                        <p className="mb-3 mr-5 text-sm font-normal text-gray-700 dark:text-black">₹10499</p>
-                        <p className="mb-3 ml-5 text-sm font-normal text-gray-700 dark:text-black line-through">₹14999</p>
+                    <div className='flex justify-between'>
+                        <p className="text-xl font-bold text-gray-700 dark:text-black">₹{newPrice}</p>
+                        <p className="text-xl font-bold text-gray-700 dark:text-gray-600 line-through">₹{oldPrice}</p>
                     </div>
-                    <hr className="w-30 h-0.5 my-1 bg-gray-100 border-0 rounded dark:bg-orange-700 relative bottom-2.5"></hr>
-                    <p className="mb-2 text-sm font-normal text-gray-700 dark:text-green-700">Save ₹4500</p>
+                    <hr />
+                    <p className="mb-2 text-xl font-bold text-gray-700 dark:text-green-600">Save ₹{saved}</p>
                 </div>
             </div>
-
         </div>
     )
 }
