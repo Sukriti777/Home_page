@@ -36,7 +36,7 @@ const MyAccordion = ({ title, children }) => {
   );
 };
 
-const Products = () => {
+const Categories = () => {
   return (
     <div className=" container mx-28">
       <Flex className="latofont">
@@ -156,4 +156,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Categories;
