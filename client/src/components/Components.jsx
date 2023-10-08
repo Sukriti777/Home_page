@@ -17,25 +17,25 @@ const Components = () => {
                 </div>
                 <div className='flex flex-wrap'>
                     <Comp1
-                        title={"Pot Collection"}
-                        discount={56}
-                        newPrice={10499}
-                        oldPrice={14999}
-                        saved={4500}
+                        title={ "Pot Collection" }
+                        discount={ 56 }
+                        newPrice={ 10499 }
+                        oldPrice={ 14999 }
+                        saved={ 4500 }
                     />
                     <Comp1
-                        title={"Pot Collection"}
-                        discount={56}
-                        newPrice={10499}
-                        oldPrice={14999}
-                        saved={4500}
+                        title={ "Pot Collection" }
+                        discount={ 56 }
+                        newPrice={ 10499 }
+                        oldPrice={ 14999 }
+                        saved={ 4500 }
                     />
                     <Comp1
-                        title={"Pot Collection"}
-                        discount={56}
-                        newPrice={10499}
-                        oldPrice={14999}
-                        saved={4500}
+                        title={ "Pot Collection" }
+                        discount={ 56 }
+                        newPrice={ 10499 }
+                        oldPrice={ 14999 }
+                        saved={ 4500 }
                     />
                 </div>
             </div>
@@ -55,7 +55,7 @@ const Components = () => {
                     <Comp2 />
                     <Comp2 />
                 </div>
-            </div> 
+            </div>
         </>
     )
 }

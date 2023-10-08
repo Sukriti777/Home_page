@@ -31,13 +31,33 @@ const MyCarousel = () => {
                         borderRadius: '20px'
                     } } className=' m-8 rounded-3xl text-white '
                     >
-                    
+
                         <h3 className='displayfont font-normal text-2xl p-5'>
-                        Best Deal Online On Arts & Painting
+                            Best Deal Online On Arts & Painting
                         </h3>
                         <div className="px-8 ">
                             <h1 className='font-normal latofont text-3xl'>
-                            Most Popular Arts
+                                Most Popular Arts
+                            </h1>
+                            <h2 className='latofont my-3 text-xl' > UP to 80% OFF</h2>
+                        </div>
+                    </div>
+                    <div key="slide2" style={ {
+                        padding: 20,
+                        height: 250,
+                        backgroundImage: `url(${bgCarousel})`,
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover',
+                        borderRadius: '20px'
+                    } } className=' m-8 rounded-3xl text-white '
+                    >
+
+                        <h3 className='displayfont font-normal text-2xl p-5'>
+                            Best Deal Online On Arts & Painting
+                        </h3>
+                        <div className="px-8 ">
+                            <h1 className='font-normal latofont text-3xl'>
+                                Most Popular Arts
                             </h1>
                             <h2 className='latofont my-3 text-xl' > UP to 80% OFF</h2>
                         </div>

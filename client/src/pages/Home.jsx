@@ -20,26 +20,26 @@ function Home() {
         <Card
           title="Product 1"
           description="This is a product description."
-          price={50}
-          discount={25}
+          price={ 50 }
+          discount={ 25 }
         />
         <Card
           title="Product 2"
           description="Another product description."
-          price={75}
-          discount={10}
+          price={ 75 }
+          discount={ 10 }
         />
         <Card
           title="Product 2"
           description="Another product description."
-          price={75}
-          discount={10}
+          price={ 75 }
+          discount={ 10 }
         />
         <Card
           title="Product 2"
           description="Another product description."
-          price={75}
-          discount={10}
+          price={ 75 }
+          discount={ 10 }
         />
       </div>
 
@@ -55,7 +55,7 @@ function Home() {
         <div className="flex justify-evenly my-5">
           <div>
             <div
-              style={{ backgroundImage: `url(${Ganpati})` }}
+              style={ { backgroundImage: `url(${Ganpati})` } }
               className="rounded-full h-[30vh] w-[30vh] bg-no-repeat bg-cover bg-center"
             ></div>
             <h2 className="text-black font-bold text-center text-2xl my-2">
@@ -64,7 +64,7 @@ function Home() {
           </div>
           <div>
             <div
-              style={{ backgroundImage: `url(${Ganpati})` }}
+              style={ { backgroundImage: `url(${Ganpati})` } }
               className="rounded-full h-[30vh] w-[30vh] bg-no-repeat bg-cover bg-center"
             ></div>
             <h2 className="text-black font-bold text-center text-2xl my-2">
@@ -73,7 +73,7 @@ function Home() {
           </div>
           <div>
             <div
-              style={{ backgroundImage: `url(${Ganpati})` }}
+              style={ { backgroundImage: `url(${Ganpati})` } }
               className="rounded-full h-[30vh] w-[30vh] bg-no-repeat bg-cover bg-center"
             ></div>
             <h2 className="text-black font-bold text-center text-2xl my-2">
@@ -82,7 +82,7 @@ function Home() {
           </div>
           <div>
             <div
-              style={{ backgroundImage: `url(${Ganpati})` }}
+              style={ { backgroundImage: `url(${Ganpati})` } }
               className="rounded-full h-[30vh] w-[30vh] bg-no-repeat bg-cover bg-center"
             ></div>
             <h2 className="text-black font-bold text-center text-2xl my-2">
