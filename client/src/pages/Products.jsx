@@ -14,6 +14,8 @@ import {
   RangeSliderThumb,
   Select,
   Checkbox,
+  Radio,
+  RadioGroup
 } from "@chakra-ui/react";
 
 const MyAccordion = ({ title, children }) => {
@@ -96,7 +98,7 @@ const Products = () => {
             <Accordion defaultIndex={[0]} allowMultiple>
               <MyAccordion title={<Text fontSize="4xl">Offers</Text>}>
                 <Stack spacing={3}>
-                  <Checkbox>Special Pricex</Checkbox>
+                  <Checkbox>Special Price</Checkbox>
                   <Checkbox>Buy more save more</Checkbox>
                 </Stack>
               </MyAccordion>
@@ -110,6 +112,42 @@ const Products = () => {
                 </Stack>
               </MyAccordion>
             </Accordion>
+<Accordion defaultIndex={[0]} allowMultiple>
+                            <AccordionItem>
+                                <h2>
+                                    <AccordionButton>
+                                        <Box as="span" flex='1' fontSize='2xl' textAlign='left'>
+                                            Availability
+                                        </Box>
+                                        <AccordionIcon />
+                                    </AccordionButton>
+                                </h2>
+                                <AccordionPanel pb={4}>
+                                    <Checkbox >Include Out Of Stock</Checkbox>
+                                </AccordionPanel>
+                            </AccordionItem>
+                        </Accordion>
+
+                        <Accordion defaultIndex={[0]} allowMultiple>
+                            <AccordionItem>
+                                <h2>
+                                    <AccordionButton>
+                                        <Box as="span" flex='1' fontSize='2xl' textAlign='left'>
+                                            Latest Products
+                                        </Box>
+                                        <AccordionIcon />
+                                    </AccordionButton>
+                                </h2>
+                                <AccordionPanel pb={4}>
+                                    <RadioGroup defaultValue='0'>
+                                        <Stack>
+                                            <Radio value='1'>Newest First</Radio>
+                                            <Radio value='2'>Products launched within 20-60 days</Radio>
+                                        </Stack>
+                                    </RadioGroup>
+                                </AccordionPanel>
+                            </AccordionItem>
+                        </Accordion>
           </Stack>
         </Box>
         <Box w="80%">{/* Main content */}</Box>
