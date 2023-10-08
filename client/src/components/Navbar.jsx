@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="flex m-[0.5em]">
         <div>
           <img
-            src={SideBar}
+            src={ SideBar }
             alt="SideBar"
             className="SideBar hover:cursor-pointer"
           />
@@ -39,17 +39,17 @@ const Navbar = () => {
             <h2>Login/SignUp</h2>
           </div>
           <div className="mx-2 flex ">
-            {" "}
+            { " " }
             <PiHandbagSimpleLight className="text-[2em] hover:cursor-pointer " />
             <h2>My Orders</h2>
           </div>
           <div className="mx-2 flex">
-            {" "}
+            { " " }
             <AiOutlineShoppingCart className="text-[2em] hover:cursor-pointer " />
             <h2>Cart</h2>
           </div>
           <div className="mx-2 flex">
-            {" "}
+            { " " }
             <AiOutlineHeart className="text-[2em] hover:cursor-pointer" />
             <h2>Wishlist</h2>
           </div>

@@ -234,8 +234,8 @@ function Footer() {
               <h2>Ultimate User Experience</h2>
               <h2>with Mobile App</h2>
               <div className="flex px-2">
-                <img src={GooglePlayStore} alt="Google Play  Store" />
-                <img src={AppStore} alt="App Store" />
+                <img src={ GooglePlayStore } alt="Google Play  Store" />
+                <img src={ AppStore } alt="App Store" />
               </div>
             </div>
           </div>

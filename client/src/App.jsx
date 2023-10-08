@@ -44,12 +44,12 @@ const MapDispatchToProps = (dispatch) => {
 const Component = ({ count, increment, decrement }) => {
   return (
     <>
-      <h1>Count = {count}</h1>
-      <button className="bg-blue-400" onClick={increment}>
+      <h1>Count = { count }</h1>
+      <button className="bg-blue-400" onClick={ increment }>
         Increment
       </button>
       <br />
-      <button className="bg-blue-200" onClick={decrement}>
+      <button className="bg-blue-200" onClick={ decrement }>
         Decrement
       </button>
     </>
@@ -63,18 +63,18 @@ export default function App() {
     <>
 
       <ChakraProvider>
-      <Provider store={store}>
-        <div>
-          <Navbar />
+        <Provider store={ store }>
+          <div>
+            <Navbar />
 
-          <Home />
+            <Home />
 
-          {/* <Container /> */}
+            {/* <Container /> */ }
             <Products />
             <div className="h-[100em]"></div>
-          <Footer />
-        </div>
-      </Provider>
+            <Footer />
+          </div>
+        </Provider>
 
       </ChakraProvider>
     </>
