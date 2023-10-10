@@ -95,6 +95,35 @@ const Categories = () => {
                 <option value="option3">Option 3</option>
               </Select>
             </Flex>
+            <Accordion defaultIndex={[0]} allowMultiple>
+              <MyAccordion title={<Text fontSize="2xl">Material</Text>}>
+                <Stack spacing={3}>
+                  <div className="">
+                    <input
+                      type="text"
+                      placeholder="Search Material"
+                      className="border-2 border-gray-300 rounded-lg px-2 py-1 hover:cursor-pointer w-[14em] h-[2em]"
+                    />
+                  </div>
+
+                  <Checkbox>One piece black</Checkbox>
+                  <Checkbox>Two piece black</Checkbox>
+                  <Checkbox>Nylon string</Checkbox>
+                  <Checkbox>Steel String</Checkbox>
+                </Stack>
+              </MyAccordion>
+            </Accordion>
+
+            <Accordion defaultIndex={[0]} allowMultiple>     
+              <MyAccordion title={<Text fontSize="2xl">Ratings</Text>}>
+                <Stack spacing={3}>
+                  <Checkbox>Above 4 stars</Checkbox>
+                  <Checkbox>Above 3 stars</Checkbox>
+                  <Checkbox>Above 2 stars</Checkbox>
+                  <Checkbox>Above 1 star</Checkbox>
+                </Stack>
+              </MyAccordion>
+            </Accordion>
             <Accordion defaultIndex={ [0] } allowMultiple>
               <MyAccordion title={ <Text fontSize="4xl">Offers</Text> }>
                 <Stack spacing={ 3 }>
