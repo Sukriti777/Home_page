@@ -11,6 +11,7 @@ import { createStore } from 'redux';
 import { Provider, useSelector, useDispatch, connect } from 'react-redux';
 import MyCarousel from './components/MyCarousel';
 import Categories from './pages/Categories';
+import FAQ from './pages/FAQ';
 
 // DOCS
 //  <Container /> will be used afterward and as a template when using redux
@@ -47,12 +48,12 @@ const MapDispatchToProps = (dispatch) => {
 const Component = ({ count, increment, decrement }) => {
   return (
     <>
-      <h1>Count = {count}</h1>
-      <button className="bg-blue-400" onClick={increment}>
+      <h1>Count = { count }</h1>
+      <button className="bg-blue-400" onClick={ increment }>
         Increment
       </button>
       <br />
-      <button className="bg-blue-200" onClick={decrement}>
+      <button className="bg-blue-200" onClick={ decrement }>
         Decrement
       </button>
     </>
@@ -65,14 +66,15 @@ export default function App() {
   return (
     <>
       <ChakraProvider>
-        <Provider store={store}>
+        <Provider store={ store }>
           <div>
-            <Stack spacing={4}>
+            <Stack spacing={ 4 }>
               <Navbar />
               <Router>
                 <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/categories" element={<Categories />} />
+                  <Route path="/" element={ <Home /> } />
+                  <Route path="/categories" element={ <Categories /> } />
+                  <Route path='/faq' element={ <FAQ /> } />
                 </Routes>
               </Router>
               <Footer />
