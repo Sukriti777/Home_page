@@ -1,5 +1,6 @@
 import React from 'react'
 import { AiFillGift } from 'react-icons/ai';
+import './FAQls.css';
 import {
     Box,
     Accordion,
@@ -12,13 +13,13 @@ import {
 
 const Faqls = () => {
     return (
-        <div >
+        <div className='font-footlight'>
             <div className='text-center mt-12 text-5xl'>
                 FAQs
             </div>
             <div className="bg-[#6d6d6d] ml-[44%] mt-3 w-[12%] h-0.5 mb-8"></div>
             <div className='flex mb-16'>
-                <div className='border-black border m-14 w-[25%] h-fit shadow-xl shadow-gray-500 bg-[#FFEDDA]'>
+                <div className='border-black border m-14 w-[23%] h-fit shadow-xl shadow-gray-500 bg-[#FFEDDA]'>
                     <div className="container mx-5">
                         <Box w="80%" bg="">
                             <Stack spacing={4}>
@@ -27,19 +28,19 @@ const Faqls = () => {
                                     <AccordionItem>
                                         <h2>
                                             <AccordionButton>
-                                                <Box as="span" fontSize="2xl" flex='1' textAlign='left'>
+                                                <Box as="span" fontWeight="semibold" fontSize="2xl" flex='1' textAlign='left'>
                                                     Orders
                                                 </Box>
                                                 <AccordionIcon />
                                             </AccordionButton>
                                         </h2>
-                                        <AccordionPanel pb={4}>
+                                        <AccordionPanel pb={4} fontSize="xl">
                                             How to place an Order?
                                         </AccordionPanel>
-                                        <AccordionPanel pb={4}>
+                                        <AccordionPanel pb={4} fontSize="xl">
                                             Status of my Order
                                         </AccordionPanel>
-                                        <AccordionPanel pb={4}>
+                                        <AccordionPanel pb={4}fontSize="xl">
                                             Cancel Order
                                         </AccordionPanel>
                                     </AccordionItem>
@@ -47,16 +48,16 @@ const Faqls = () => {
                                     <AccordionItem>
                                         <h2>
                                             <AccordionButton>
-                                                <Box as="span" fontSize="2xl" flex='1' textAlign='left'>
+                                                <Box as="span" fontWeight="semibold" fontSize="2xl" flex='1' textAlign='left'>
                                                     Returns & Exchange
                                                 </Box>
                                                 <AccordionIcon />
                                             </AccordionButton>
                                         </h2>
-                                        <AccordionPanel pb={4}>
+                                        <AccordionPanel pb={4} fontSize="xl">
                                             About our return policies
                                         </AccordionPanel>
-                                        <AccordionPanel pb={4}>
+                                        <AccordionPanel pb={4} fontSize="xl">
                                             How to return an Item?
                                         </AccordionPanel>
                                     </AccordionItem>
@@ -64,16 +65,16 @@ const Faqls = () => {
                                     <AccordionItem>
                                         <h2>
                                             <AccordionButton>
-                                                <Box as="span" fontSize="2xl" flex='1' textAlign='left'>
+                                                <Box as="span" fontWeight="semibold" fontSize="2xl" flex='1' textAlign='left'>
                                                     Shipping Options
                                                 </Box>
                                                 <AccordionIcon />
                                             </AccordionButton>
                                         </h2>
-                                        <AccordionPanel pb={4}>
+                                        <AccordionPanel pb={4} fontSize="xl">
                                             Track Your Package
                                         </AccordionPanel>
-                                        <AccordionPanel pb={4}>
+                                        <AccordionPanel pb={4} fontSize="xl">
                                             Late Shipment
                                         </AccordionPanel>
                                     </AccordionItem>
@@ -81,31 +82,17 @@ const Faqls = () => {
                                     <AccordionItem>
                                         <h2>
                                             <AccordionButton>
-                                                <Box as="span" fontSize="2xl" flex='1' textAlign='left'>
+                                                <Box as="span" fontWeight="semibold" fontSize="2xl" flex='1' textAlign='left'>
                                                     My Account
                                                 </Box>
                                                 <AccordionIcon />
                                             </AccordionButton>
                                         </h2>
-                                        <AccordionPanel pb={4}>
+                                        <AccordionPanel pb={4}fontSize="xl">
                                             Change your account settings
                                         </AccordionPanel>
-                                        <AccordionPanel pb={4}>
+                                        <AccordionPanel pb={4} fontSize="xl">
                                             Change passwords
-                                        </AccordionPanel>
-                                    </AccordionItem>
-
-                                    <AccordionItem>
-                                        <h2>
-                                            <AccordionButton>
-                                                <Box as="span" fontSize="2xl" flex='1' textAlign='left'>
-                                                    Corporate Info
-                                                </Box>
-                                                <AccordionIcon />
-                                            </AccordionButton>
-                                        </h2>
-                                        <AccordionPanel pb={4}>
-                                            Information
                                         </AccordionPanel>
                                     </AccordionItem>
 
@@ -119,7 +106,7 @@ const Faqls = () => {
                             </div>
                             <div className='mt-4 flex bg-[#E6BEA0] w-[60%] h-12 text-center'>
                                 <div className='mt-3 ml-3 text-[#D27C2C]'><AiFillGift /></div>
-                                <div className='mt-3 ml-2 relative bottom-1 shadow-2xl'>Made For You</div>
+                                <div className='mt-3 ml-2 font-bold relative bottom-1 shadow-2xl'>Made For You</div>
                             </div>
                         </div>
                     </div>
