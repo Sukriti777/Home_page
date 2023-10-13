@@ -1,93 +1,130 @@
 import React from 'react';
-import { ChakraProvider, extendTheme, Box, Text, Flex } from '@chakra-ui/react';
-import { FaShoppingCart, FaTruck } from 'react-icons/fa';
+import { Box, Center, ChakraProvider, Flex, Text } from '@chakra-ui/react';
+import { FaShoppingBag, FaTruck } from 'react-icons/fa';
 
-const theme = extendTheme({
-  styles: {
-    global: {
-      // Add global CSS styles here if needed
-    },
-  },
-});
+const textStyle = {
+  textAlign: 'center',
+  color: 'black',
+  fontSize: '20px',
+  fontWeight: 'light',
+  fontFamily: 'Roboto',
+  whiteSpace: 'nowrap',
+  textOverflow: 'ellipsis',
+  overflow: 'hidden',
+  lineHeight: '1',
+};
+
+const ShoppingBox = () => {
+  return (
+    <ChakraProvider>
+      <Box
+        w="150px"
+        h="130px"
+        backgroundColor="#FFB76B"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        style={{
+          boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.25)",
+          margin: "20px", // Increase the gap by adjusting the margin
+        }}
+      >
+        <Box
+          w="75%"
+          h="75%"
+          backgroundColor="#FFC587"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          style={{
+            boxShadow: "0 0 10px #FFC587",
+            backdropFilter: "blur(5px)",
+            position: "relative",
+          }}
+        >
+          <Box style={{ position: "absolute", top: "0", left: "50%", transform: "translateX(-50%)" }}>
+            <FaShoppingBag size={24} color="black" />
+          </Box>
+
+          <Box sx={textStyle} style={{ marginTop: "30px" }}>
+            Shopping<br />With<br />Us
+          </Box>
+        </Box>
+      </Box>
+    </ChakraProvider>
+  );
+};
+
+const SellingBox = () => {
+  return (
+    <ChakraProvider>
+      <Box
+        w="150px"
+        h="130px"
+        backgroundColor="#FFB76B"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        style={{
+          boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.25)",
+          margin: "20px", // Increase the gap by adjusting the margin
+        }}
+      >
+        <Box
+          w="75%"
+          h="75%"
+          backgroundColor="#FFC587"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          style={{
+            boxShadow: "0 0 10px #FFC587",
+            backdropFilter: "blur(5px)",
+            position: "relative",
+          }}
+        >
+          <Box style={{ position: "absolute", top: "0", left: "50%", transform: "translateX(-50%)" }}>
+            <FaTruck size={24} color="black" />
+          </Box>
+
+          <Box sx={textStyle} style={{ marginTop: "30px" }}>
+            Selling<br />With<br />Us
+          </Box>
+        </Box>
+      </Box>
+    </ChakraProvider>
+  );
+};
 
 const App = () => {
   return (
-    <ChakraProvider theme={theme}>
-      <Flex direction="column" alignItems="center" justifyContent="center" h="100vh">
-        <Text
-          textAlign="center"
-          color="black"
-          fontSize="40px"
-          fontWeight="normal"
-          fontFamily="merrifont"
-          textDecoration="underline"
-        >
-          What Do You Need Help With?
-        </Text>
-        <Flex alignItems="center" width="80%">
-          <Box
-            width="50%" // Set width to 50% for both boxes to make them square
-            height="60%px" // Set a fixed height
-            background="#FFB76B"
-            boxShadow="20px 20px 10px rgba(0, 0, 0, 0.25)"
-            borderRadius="10px"
-            border="1px solid black"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            padding="20px" // Add padding to the box
-          >
-            <Flex direction="column" alignItems="center">
-              <FaShoppingCart w={100} h={100} color="blue.500" />
-              <Text
-                textAlign="center"
-                color="black"
-                fontSize="20px"
-                fontWeight="light"
-                fontFamily="['merrifont']"
-              >
-                Shopping
-                <br />
-                With
-                <br />
-                Us
-              </Text>
-            </Flex>
-          </Box>
-
-          <Box
-            width="50%" // Set width to 50% for both boxes to make them square
-            height="60%px" // Set a fixed height
-            background="#FFB76B"
-            boxShadow="20px 20px 10px rgba(0, 0, 0, 0.25)"
-            borderRadius="10px"
-            border="1px solid black"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            padding="20px" // Add padding to the box
-            margin="0 40px" // Add margin for spacing between the boxes
-          >
-            <Flex direction="column" alignItems="center">
-              <FaTruck w={100} h={100} color="blue.500" />
-              <Text
-                textAlign="center"
-                color="black"
-                fontSize="20px"
-                fontWeight="light"
-                fontFamily="['merrifont']"
-              >
-                Selling
-                <br />
-                With
-                <br />
-                Us
-              </Text>
-            </Flex>
-          </Box>
-        </Flex>
+    <Flex
+      height="100vh"
+      alignItems="center"
+      justifyContent="center"
+      flexDirection="column"
+    >
+      <Text
+        textAlign="center"
+        color="black"
+        fontSize="40px"
+        fontWeight="normal"
+        fontFamily="Roboto"
+        textDecoration="underline"
+      >
+        What Do You Need Help With?
+      </Text>
+      <Flex
+        alignItems="center"
+        justifyContent="center"
+        flexDirection="column"
+      >
+        <div style={{ display: 'flex' }}>
+          <ShoppingBox />
+          <SellingBox />
+        </div>
       </Flex>
-    </ChakraProvider>
+    </Flex>
   );
 };
 
