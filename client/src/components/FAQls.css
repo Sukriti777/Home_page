@@ -1,0 +1,6 @@
+/* Example custom class to set font-family to "Footlight MT Light" */
+.font-footlight {
+    font-family: "Footlight MT Light", serif;
+    /* You can also set other font properties here */
+  }
+  
