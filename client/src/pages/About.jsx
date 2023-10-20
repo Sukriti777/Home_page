@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutHero from '../components/AboutHero';
+import Aboutfs from '../components/Aboutfs';
 
 function About() {
   return (
@@ -17,7 +18,7 @@ function About() {
           </div>
         </div>
       </div>
-
+      <Aboutfs/>
     </>
   );
 }
