@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutHero from '../components/AboutHero';
 import comp3About from '../components/comp3About';
+import Aboutfs from '../components/Aboutfs';
 
 function About() {
   return (
@@ -18,7 +19,8 @@ function About() {
           </div>
         </div>
       </div>
-
+      <comp3About/>
+      <Aboutfs/>
     </>
   );
 }
